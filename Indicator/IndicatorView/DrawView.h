@@ -11,8 +11,10 @@
 #import "DrawNode.h"
 
 @interface DrawView :BaseView
-@property (assign ,nonatomic) IBInspectable BOOL superDraw;
+
 @property (retain ,nonatomic) NSMutableArray <DrawNode *> *nodeArray;
+
+@property (assign ,nonatomic) IBInspectable BOOL superDraw;
 
 @end
 

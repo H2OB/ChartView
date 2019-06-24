@@ -35,6 +35,18 @@
     
 }
 
++ (instancetype)initWithAttrString:(NSMutableAttributedString *)attrString rotation:(BOOL)rotation size:(CGSize)size center:(CGPoint)center{
+    
+    TextNode *node = [TextNode initWithAttrString:attrString rotation:rotation];
+    
+    CGRect rect = [attrString boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
+    rect.origin.x = center.x - rect.size.width/2.0;
+    rect.origin.y = center.y - rect.size.height/2.0;
+    node.rect = rect;
+    
+    return node;
+    
+}
 
 @end
 
@@ -46,7 +58,22 @@
     node.image = image;
     CGRect rect = CGRectZero;
     rect.size = image.size;
+    rect.origin = origin;
     node.rect = rect;
+    return node;
+}
+
++ (instancetype)initWithImage:(UIImage *)image
+                       center:(CGPoint)center{
+    
+    ImageNode *node = [ImageNode new];
+    node.image = image;
+    CGRect rect = CGRectZero;
+    rect.size = image.size;
+    rect.origin.x = center.x - image.size.width/2.0;
+    rect.origin.y = center.y - image.size.height/2.0;
+    node.rect = rect;
+    
     return node;
 }
 
@@ -96,4 +123,37 @@
     return node;
     
 }
+@end
+
+@implementation TouchNode
+
++ (instancetype)initWithTouchRect:(CGRect)touchRect;{
+    
+    return [TouchNode initWithNodes:nil touchRect:touchRect aimPoint:CGPointZero];
+}
+
+
++ (instancetype)initWithNodes:(NSArray *)nodesArray
+                    touchRect:(CGRect)touchRect
+                     aimPoint:(CGPoint)aimPoint{
+    
+    return [TouchNode initWithNodes:nodesArray touchRect:touchRect aimPoint:aimPoint isBubble:NO];
+    
+}
+
++ (instancetype)initWithNodes:(NSArray *)nodesArray
+                    touchRect:(CGRect)touchRect
+                     aimPoint:(CGPoint)aimPoint
+                     isBubble:(BOOL)isBubble{
+    
+    TouchNode *node = [[TouchNode alloc]init];
+    node.nodesArray = nodesArray;
+    node.touchRect = touchRect;
+    node.aimPoint =aimPoint;
+    node.isBubble = isBubble;
+    
+    return node;
+    
+}
+
 @end

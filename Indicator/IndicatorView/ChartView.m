@@ -11,6 +11,7 @@
 @interface ChartView ()
 
 @property (retain ,nonatomic) DrawView *scaleView;//标尺视图
+@property (retain ,nonatomic) DrawView *otherScaleView;//标尺视图
 @property (retain ,nonatomic) UIScrollView *scrollView;
 @property (retain ,nonatomic) DrawView *contentView;//主内容视图
 @property (retain ,nonatomic) DrawView *otherView; //其他视图
@@ -24,6 +25,9 @@
     
     self.otherView = [DrawView new];
     [self addSubview:self.otherView];
+    
+    self.otherScaleView = [DrawView new];
+    [self addSubview:self.otherScaleView];
     
     
     self.scaleView = [DrawView new];
@@ -51,6 +55,7 @@
     _handle = handle;
     
     self.scaleView.nodeArray = _handle.scaleNodes;
+    self.otherScaleView.nodeArray = _handle.otherScaleNodes;
     self.contentView.nodeArray = _handle.contentNodes;
     self.otherView.nodeArray = _handle.otherNodes;
     
@@ -61,6 +66,7 @@
 - (void)layoutSubviews{
     
     self.scaleView.frame = self.handle.scaleFrame;
+    self.otherScaleView.frame = self.handle.otherScaleFrame;
     self.scrollView.frame = self.handle.contentFrame;
     self.scrollView.contentSize = self.handle.contentSize;
     self.contentView.frame = CGRectMake(0, 0, self.handle.contentSize.width, self.handle.contentSize.height);

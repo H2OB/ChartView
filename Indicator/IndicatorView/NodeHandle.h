@@ -31,6 +31,7 @@ typedef NS_OPTIONS(NSUInteger, ChartType) {
 @interface NodeHandle : NSObject
 
 @property (retain ,nonatomic) NSMutableArray *scaleNodes;
+@property (retain ,nonatomic) NSMutableArray *otherScaleNodes;
 @property (retain ,nonatomic) NSMutableArray *contentNodes;
 @property (retain ,nonatomic) NSMutableArray *otherNodes;
 
@@ -38,6 +39,7 @@ typedef NS_OPTIONS(NSUInteger, ChartType) {
 @property (assign ,nonatomic) CGRect contentFrame;
 @property (assign ,nonatomic) CGSize contentSize;
 @property (assign ,nonatomic) CGRect otherFrame;
+@property (assign ,nonatomic) CGRect otherScaleFrame;
 
 
 /**
@@ -72,6 +74,14 @@ typedef NS_OPTIONS(NSUInteger, ChartType) {
  @return handle
  */
 + (NodeHandle *)nodeFromBar;
+
+- (NSMutableAttributedString *)attrStringFromString:(NSString *)string color:(UIColor*)color font:(UIFont *)font;
+
+- (CGSize)sizeForAttrString:(NSAttributedString *)attrString size:(CGSize )size;
+
+- (CGPoint)centerFormPathNode:(PathNode *)node;
+
+- (UIBezierPath*)smoothedPathWithGranularity:(NSInteger)granularity pointArray:(NSMutableArray *)pointArray;
 
 @end
 

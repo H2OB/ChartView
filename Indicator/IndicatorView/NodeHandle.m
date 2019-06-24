@@ -10,6 +10,31 @@
 
 @implementation NodeHandle
 
+- (NSMutableArray *)scaleNodes{
+    
+    if(!_scaleNodes)_scaleNodes = @[].mutableCopy;
+    return _scaleNodes;
+}
+
+- (NSMutableArray *)contentNodes{
+    
+    if(!_contentNodes)_contentNodes = @[].mutableCopy;
+    return _contentNodes;
+}
+
+
+- (NSMutableArray *)otherNodes{
+    
+    if(!_otherNodes)_otherNodes = @[].mutableCopy;
+    return _otherNodes;
+}
+
+
+- (NSMutableArray *)otherScaleNodes{
+    
+    if(!_otherScaleNodes)_otherScaleNodes = @[].mutableCopy;
+    return _otherScaleNodes;
+}
 
 
 + (NodeHandle *)nodeFromBar{
@@ -107,7 +132,7 @@
             
             handle.contentFrame = CGRectMake(CGRectGetMaxX(handle.scaleFrame), CGRectGetMinY(handle.scaleFrame),finalSize.width -CGRectGetWidth(handle.scaleFrame), finalSize.height);
             
-            maxMagin = scaleFont.lineHeight + 5;
+             maxMagin = scaleFont.lineHeight + 5;
              averageLong = (CGRectGetHeight(handle.contentFrame) - stepFont.lineHeight -maxMagin)/scaleNum;
             
             //设置刻度尺节点

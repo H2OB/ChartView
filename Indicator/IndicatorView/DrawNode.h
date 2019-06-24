@@ -9,18 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define MAXSIZE  CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX)
+
+
 @interface DrawNode : NSObject
 
 /**
- 是否允许点击 默认NO
+ 关联数据
  */
-@property (assign ,nonatomic) BOOL allowTouch;
+@property (retain ,nonatomic) id associateData;
 
-/**
- 点击范围 默认
- */
-@property (assign ,nonatomic) CGRect touchRect;
 
+@property (copy ,nonatomic) NSString *router;
 
 @end
 
@@ -43,11 +43,9 @@
  */
 @property (assign ,nonatomic) BOOL rotation;
 
-
-+ (instancetype)initWithAttrString:(NSMutableAttributedString *)attrString rotation:(BOOL)rotation;
-
-
 + (instancetype)initWithAttrString:(NSMutableAttributedString *)attrString rotation:(BOOL)rotation size:(CGSize)size origin:(CGPoint)origin;
+
++ (instancetype)initWithAttrString:(NSMutableAttributedString *)attrString rotation:(BOOL)rotation size:(CGSize)size center:(CGPoint)center;
 
 @end
 
@@ -65,6 +63,9 @@
 
 + (instancetype)initWithImage:(UIImage *)image
                         origin:(CGPoint)origin;
+
++ (instancetype)initWithImage:(UIImage *)image
+                       center:(CGPoint)center;
 
 @end
 
@@ -149,3 +150,33 @@
 
 @end
 
+
+/**
+ 点击节点
+ */
+@interface TouchNode : DrawNode
+
+@property (assign ,nonatomic) BOOL isBubble;//是否气泡类型
+
+@property (assign ,nonatomic) CGPoint aimPoint;
+
+@property (retain ,nonatomic) NSArray *nodesArray;
+
+@property (assign ,nonatomic) CGRect touchRect;
+
+@property (assign ,nonatomic) CGSize contentSize;
+
+
++ (instancetype)initWithTouchRect:(CGRect)touchRect;
+
+
++ (instancetype)initWithNodes:(NSArray *)nodesArray
+                    touchRect:(CGRect)touchRect
+                     aimPoint:(CGPoint)aimPoint;
+
++ (instancetype)initWithNodes:(NSArray *)nodesArray
+                    touchRect:(CGRect)touchRect
+                     aimPoint:(CGPoint)aimPoint
+                     isBubble:(BOOL)isBubble;
+
+@end

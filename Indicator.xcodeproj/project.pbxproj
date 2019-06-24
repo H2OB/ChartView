@@ -17,6 +17,8 @@
 		71D936F2229FC3F0009D32E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D936F0229FC3F0009D32E3 /* LaunchScreen.storyboard */; };
 		71D936F5229FC3F0009D32E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D936F4229FC3F0009D32E3 /* main.m */; };
 		71D93704229FC49C009D32E3 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D93702229FC49C009D32E3 /* BaseView.m */; };
+		71E122DD22C0DF6F00DDAC05 /* BubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E122DB22C0DF6F00DDAC05 /* BubbleView.m */; };
+		71E122DE22C0DF6F00DDAC05 /* ChartConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E122DC22C0DF6F00DDAC05 /* ChartConfig.m */; };
 		71F2160422AF455C00110469 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F2160322AF455C00110469 /* ChartView.m */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,10 @@
 		71D936F4229FC3F0009D32E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71D93702229FC49C009D32E3 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		71D93703229FC49C009D32E3 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		71E122D922C0DF6F00DDAC05 /* BubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleView.h; sourceTree = "<group>"; };
+		71E122DA22C0DF6F00DDAC05 /* ChartConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartConfig.h; sourceTree = "<group>"; };
+		71E122DB22C0DF6F00DDAC05 /* BubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleView.m; sourceTree = "<group>"; };
+		71E122DC22C0DF6F00DDAC05 /* ChartConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartConfig.m; sourceTree = "<group>"; };
 		71F2160222AF455C00110469 /* ChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartView.h; sourceTree = "<group>"; };
 		71F2160322AF455C00110469 /* ChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +96,10 @@
 		71D936FB229FC402009D32E3 /* IndicatorView */ = {
 			isa = PBXGroup;
 			children = (
+				71E122D922C0DF6F00DDAC05 /* BubbleView.h */,
+				71E122DB22C0DF6F00DDAC05 /* BubbleView.m */,
+				71E122DA22C0DF6F00DDAC05 /* ChartConfig.h */,
+				71E122DC22C0DF6F00DDAC05 /* ChartConfig.m */,
 				71D93703229FC49C009D32E3 /* BaseView.h */,
 				71D93702229FC49C009D32E3 /* BaseView.m */,
 				710B0A2822AE3E0100DFB813 /* NodeHandle.h */,
@@ -175,12 +185,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				710B0A3322AF39A600DFB813 /* DrawNode.m in Sources */,
+				71E122DD22C0DF6F00DDAC05 /* BubbleView.m in Sources */,
 				71D936EA229FC3EE009D32E3 /* ViewController.m in Sources */,
 				710B0A3622AF3F2900DFB813 /* DrawView.m in Sources */,
 				71D936F5229FC3F0009D32E3 /* main.m in Sources */,
 				710B0A2A22AE3E0100DFB813 /* NodeHandle.m in Sources */,
 				71D936E7229FC3EE009D32E3 /* AppDelegate.m in Sources */,
 				71D93704229FC49C009D32E3 /* BaseView.m in Sources */,
+				71E122DE22C0DF6F00DDAC05 /* ChartConfig.m in Sources */,
 				71F2160422AF455C00110469 /* ChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

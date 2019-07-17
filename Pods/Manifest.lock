@@ -1,0 +1,16 @@
+PODS:
+  - YYAsyncLayer (1.0)
+
+DEPENDENCIES:
+  - YYAsyncLayer
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YYAsyncLayer
+
+SPEC CHECKSUMS:
+  YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
+
+PODFILE CHECKSUM: f3ec1b1b259c7f6c381fa484f41a6d599f7c0f44
+
+COCOAPODS: 1.5.2

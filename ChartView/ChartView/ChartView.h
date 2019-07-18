@@ -7,7 +7,7 @@
 //
 
 #import "BaseView.h"
-#import "DrawView.h"
+
 @class ChartHandle;
 
 @interface ChartView : BaseView

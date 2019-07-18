@@ -8,16 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3DB21BE95438C3F99E845085 /* libPods-ChartView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F40C80A257771ADC6E649F /* libPods-ChartView.a */; };
-		7121090722DF2B690046523C /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121090622DF2B690046523C /* BaseView.m */; };
+		7121090B22DFFFEE0046523C /* FFChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121090A22DFFFEE0046523C /* FFChartView.m */; };
+		7121090E22DFFFFF0046523C /* FFDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121090D22DFFFFF0046523C /* FFDrawView.m */; };
+		7121091122E000120046523C /* FFDrawNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121091022E000120046523C /* FFDrawNode.m */; };
+		7121091422E000390046523C /* FFChartHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121091322E000390046523C /* FFChartHandle.m */; };
+		7121091722E0004B0046523C /* FFExcelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121091622E0004B0046523C /* FFExcelView.m */; };
+		7121091A22E0005C0046523C /* FFExcelHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7121091922E0005C0046523C /* FFExcelHandle.m */; };
 		71449F8622C88356001FF989 /* FFTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71449F7D22C88356001FF989 /* FFTipsView.m */; };
-		71449F8722C88356001FF989 /* ChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71449F8022C88356001FF989 /* ChartView.m */; };
-		71449F8822C88356001FF989 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71449F8122C88356001FF989 /* DrawView.m */; };
-		71449F8922C88356001FF989 /* DrawNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 71449F8222C88356001FF989 /* DrawNode.m */; };
-		7183E26B22CA011F009F63CF /* ChartHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7183E26A22CA011F009F63CF /* ChartHandle.m */; };
 		7183E27122CB65A6009F63CF /* NSNumber+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7183E26E22CB65A6009F63CF /* NSNumber+Helper.m */; };
 		7183E27222CB65A6009F63CF /* NSMutableAttributedString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7183E26F22CB65A6009F63CF /* NSMutableAttributedString+Helper.m */; };
-		71DBBB7922D86E13003921CB /* ExcelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DBBB7822D86E13003921CB /* ExcelView.m */; };
-		71DBBB7C22D86E27003921CB /* ExcelHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DBBB7B22D86E27003921CB /* ExcelHandle.m */; };
 		71E122B222BE375C00DDAC05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E122B122BE375C00DDAC05 /* AppDelegate.m */; };
 		71E122B522BE375C00DDAC05 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E122B422BE375C00DDAC05 /* ViewController.m */; };
 		71E122B822BE375C00DDAC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E122B622BE375C00DDAC05 /* Main.storyboard */; };
@@ -28,26 +27,24 @@
 
 /* Begin PBXFileReference section */
 		0ED1DE3A4C2700CD514ECFDA /* Pods-ChartView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChartView/Pods-ChartView.release.xcconfig"; sourceTree = "<group>"; };
-		7121090522DF2B660046523C /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
-		7121090622DF2B690046523C /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		7121090922DFFFEE0046523C /* FFChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFChartView.h; sourceTree = "<group>"; };
+		7121090A22DFFFEE0046523C /* FFChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFChartView.m; sourceTree = "<group>"; };
+		7121090C22DFFFFF0046523C /* FFDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFDrawView.h; sourceTree = "<group>"; };
+		7121090D22DFFFFF0046523C /* FFDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFDrawView.m; sourceTree = "<group>"; };
+		7121090F22E000120046523C /* FFDrawNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFDrawNode.h; sourceTree = "<group>"; };
+		7121091022E000120046523C /* FFDrawNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFDrawNode.m; sourceTree = "<group>"; };
+		7121091222E000390046523C /* FFChartHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFChartHandle.h; sourceTree = "<group>"; };
+		7121091322E000390046523C /* FFChartHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFChartHandle.m; sourceTree = "<group>"; };
+		7121091522E0004B0046523C /* FFExcelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFExcelView.h; sourceTree = "<group>"; };
+		7121091622E0004B0046523C /* FFExcelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFExcelView.m; sourceTree = "<group>"; };
+		7121091822E0005C0046523C /* FFExcelHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFExcelHandle.h; sourceTree = "<group>"; };
+		7121091922E0005C0046523C /* FFExcelHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFExcelHandle.m; sourceTree = "<group>"; };
 		71449F7D22C88356001FF989 /* FFTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFTipsView.m; sourceTree = "<group>"; };
 		71449F7E22C88356001FF989 /* FFTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTipsView.h; sourceTree = "<group>"; };
-		71449F8022C88356001FF989 /* ChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartView.m; sourceTree = "<group>"; };
-		71449F8122C88356001FF989 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
-		71449F8222C88356001FF989 /* DrawNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawNode.m; sourceTree = "<group>"; };
-		71449F8322C88356001FF989 /* ChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartView.h; sourceTree = "<group>"; };
-		71449F8422C88356001FF989 /* DrawNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawNode.h; sourceTree = "<group>"; };
-		71449F8522C88356001FF989 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
-		7183E26922CA011F009F63CF /* ChartHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartHandle.h; sourceTree = "<group>"; };
-		7183E26A22CA011F009F63CF /* ChartHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartHandle.m; sourceTree = "<group>"; };
 		7183E26D22CB65A6009F63CF /* NSNumber+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Helper.h"; sourceTree = "<group>"; };
 		7183E26E22CB65A6009F63CF /* NSNumber+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Helper.m"; sourceTree = "<group>"; };
 		7183E26F22CB65A6009F63CF /* NSMutableAttributedString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Helper.m"; sourceTree = "<group>"; };
 		7183E27022CB65A6009F63CF /* NSMutableAttributedString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Helper.h"; sourceTree = "<group>"; };
-		71DBBB7722D86E13003921CB /* ExcelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExcelView.h; sourceTree = "<group>"; };
-		71DBBB7822D86E13003921CB /* ExcelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExcelView.m; sourceTree = "<group>"; };
-		71DBBB7A22D86E27003921CB /* ExcelHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExcelHandle.h; sourceTree = "<group>"; };
-		71DBBB7B22D86E27003921CB /* ExcelHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExcelHandle.m; sourceTree = "<group>"; };
 		71E122AD22BE375C00DDAC05 /* ChartView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E122B022BE375C00DDAC05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		71E122B122BE375C00DDAC05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +71,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7121090822DFFFC50046523C /* FFChartView */ = {
+			isa = PBXGroup;
+			children = (
+				7121090922DFFFEE0046523C /* FFChartView.h */,
+				7121090A22DFFFEE0046523C /* FFChartView.m */,
+				7121090C22DFFFFF0046523C /* FFDrawView.h */,
+				7121090D22DFFFFF0046523C /* FFDrawView.m */,
+				7121090F22E000120046523C /* FFDrawNode.h */,
+				7121091022E000120046523C /* FFDrawNode.m */,
+				7121091222E000390046523C /* FFChartHandle.h */,
+				7121091322E000390046523C /* FFChartHandle.m */,
+				7121091522E0004B0046523C /* FFExcelView.h */,
+				7121091622E0004B0046523C /* FFExcelView.m */,
+				7121091822E0005C0046523C /* FFExcelHandle.h */,
+				7121091922E0005C0046523C /* FFExcelHandle.m */,
+			);
+			path = FFChartView;
+			sourceTree = "<group>";
+		};
 		71449F7C22C88356001FF989 /* FFTipsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,27 +97,6 @@
 				71449F7D22C88356001FF989 /* FFTipsView.m */,
 			);
 			path = FFTipsView;
-			sourceTree = "<group>";
-		};
-		71449F7F22C88356001FF989 /* ChartView */ = {
-			isa = PBXGroup;
-			children = (
-				7121090522DF2B660046523C /* BaseView.h */,
-				7121090622DF2B690046523C /* BaseView.m */,
-				71449F8322C88356001FF989 /* ChartView.h */,
-				71449F8022C88356001FF989 /* ChartView.m */,
-				71449F8522C88356001FF989 /* DrawView.h */,
-				71449F8122C88356001FF989 /* DrawView.m */,
-				71449F8422C88356001FF989 /* DrawNode.h */,
-				71449F8222C88356001FF989 /* DrawNode.m */,
-				7183E26922CA011F009F63CF /* ChartHandle.h */,
-				7183E26A22CA011F009F63CF /* ChartHandle.m */,
-				71DBBB7722D86E13003921CB /* ExcelView.h */,
-				71DBBB7822D86E13003921CB /* ExcelView.m */,
-				71DBBB7A22D86E27003921CB /* ExcelHandle.h */,
-				71DBBB7B22D86E27003921CB /* ExcelHandle.m */,
-			);
-			path = ChartView;
 			sourceTree = "<group>";
 		};
 		7183E26C22CB6592009F63CF /* Helper */ = {
@@ -136,8 +131,8 @@
 		71E122AF22BE375C00DDAC05 /* ChartView */ = {
 			isa = PBXGroup;
 			children = (
+				7121090822DFFFC50046523C /* FFChartView */,
 				7183E26C22CB6592009F63CF /* Helper */,
-				71449F7F22C88356001FF989 /* ChartView */,
 				71449F7C22C88356001FF989 /* FFTipsView */,
 				71E122B022BE375C00DDAC05 /* AppDelegate.h */,
 				71E122B122BE375C00DDAC05 /* AppDelegate.m */,
@@ -262,17 +257,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7183E27222CB65A6009F63CF /* NSMutableAttributedString+Helper.m in Sources */,
-				71449F8922C88356001FF989 /* DrawNode.m in Sources */,
+				7121091A22E0005C0046523C /* FFExcelHandle.m in Sources */,
+				7121091722E0004B0046523C /* FFExcelView.m in Sources */,
 				71E122B522BE375C00DDAC05 /* ViewController.m in Sources */,
 				71E122C022BE375E00DDAC05 /* main.m in Sources */,
 				7183E27122CB65A6009F63CF /* NSNumber+Helper.m in Sources */,
-				71DBBB7C22D86E27003921CB /* ExcelHandle.m in Sources */,
-				7121090722DF2B690046523C /* BaseView.m in Sources */,
-				71449F8822C88356001FF989 /* DrawView.m in Sources */,
-				71449F8722C88356001FF989 /* ChartView.m in Sources */,
+				7121091122E000120046523C /* FFDrawNode.m in Sources */,
+				7121091422E000390046523C /* FFChartHandle.m in Sources */,
 				71449F8622C88356001FF989 /* FFTipsView.m in Sources */,
-				7183E26B22CA011F009F63CF /* ChartHandle.m in Sources */,
-				71DBBB7922D86E13003921CB /* ExcelView.m in Sources */,
+				7121090E22DFFFFF0046523C /* FFDrawView.m in Sources */,
+				7121090B22DFFFEE0046523C /* FFChartView.m in Sources */,
 				71E122B222BE375C00DDAC05 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

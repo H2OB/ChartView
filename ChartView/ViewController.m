@@ -7,15 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "ChartView.h"
-#import "ChartHandle.h"
-#import "ExcelView.h"
-#import "ExcelHandle.h"
+#import "FFChartView.h"
+#import "FFChartHandle.h"
+#import "FFExcelView.h"
+#import "FFExcelHandle.h"
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet ChartView *chartView;
-@property (weak, nonatomic) IBOutlet ExcelView *excelView;
+@property (weak, nonatomic) IBOutlet FFChartView *chartView;
+@property (weak, nonatomic) IBOutlet FFExcelView *excelView;
 
 
 @end
@@ -177,7 +177,7 @@
     
     
     CGRect frame = CGRectMake(10, 50, self.view.bounds.size.width - 2 * 10, 300);
-    ChartHandle * chartHandle = [[ChartHandle alloc]initWithAdaptType:AdaptTypeFixedSize initSize:frame.size];
+    FFChartHandle * chartHandle = [[FFChartHandle alloc]initWithAdaptType:AdaptTypeFixedSize initSize:frame.size];
     
     [chartHandle appendScaleHandle:scaleHandle];
     [chartHandle configGroupHandle:groupHandle];
@@ -192,7 +192,7 @@
 
 - (void)showExcelView{
     
-    ExcelHandle * excelHandle = [[ExcelHandle alloc]initWithInitSize:CGSizeMake(self.view.bounds.size.width - 2 * 10, 300)];
+    FFExcelHandle * excelHandle = [[FFExcelHandle alloc]initWithInitSize:CGSizeMake(self.view.bounds.size.width - 2 * 10, 300)];
     excelHandle.titleValueSpeace = 20;
     excelHandle.valueSpeace = 10;
     excelHandle.visibleRowNum = 5;
@@ -203,7 +203,7 @@
     excelHandle.titleWidth = 0;
     excelHandle.titleHeight = 0;
     
-    RowHandle * handle = [[RowHandle alloc]init];
+    FFRowHandle * handle = [[FFRowHandle alloc]init];
     handle.title = @"我是标题";
     handle.valueArray = @[@"我是分类一",@"我是分类二",@"我是分类三",@"我是分类四",@"我是分类五"].mutableCopy;
     handle.titleFont = [UIFont systemFontOfSize:12];
@@ -220,7 +220,7 @@
     
     for (NSInteger index = 0;index < 20 ; index ++) {
         
-        RowHandle * rowHandle = [[RowHandle alloc]init];
+        FFRowHandle * rowHandle = [[FFRowHandle alloc]init];
         rowHandle.title = [@(index).stringValue stringByAppendingString:@"测试名字"];
         rowHandle.valueArray = @[@"我是值一",@"我是值二",@"我是值三",@"我是值四",@"我是值五"].mutableCopy;
         rowHandle.titleFont = [UIFont systemFontOfSize:12];
